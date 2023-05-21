@@ -7,7 +7,7 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
 
 ## Config steps
 
-- 1.install `lrzsz` on your server
+- 1.Install `lrzsz` on your server
 
   ```
   # Debian
@@ -20,11 +20,11 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
   dnf install lrzsz
   ```
 
-- 2.install `lrzsz` on your macOS
+- 2.Install `lrzsz` on your macOS
   ```
   brew install lrzsz
   ```
-- 3.download these two scripts to `/usr/local/bin/`
+- 3.Download these two scripts to `/usr/local/bin/`
 
   ```bash
   wget https://raw.githubusercontent.com/xiebruce/iterm2-zmodem/main/iterm2-rz.sh -O /usr/local/bin/iterm2-rz.sh
@@ -32,11 +32,11 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
   wget https://raw.githubusercontent.com/xiebruce/iterm2-zmodem/main/iterm2-sz.sh -O /usr/local/bin/iterm2-sz.sh
   ```
 
-- 4.give executable permission to these two files
+- 4.Give executable permission to these two files
   ```bash
   chmod u+x /usr/local/bin/iterm2-*
   ```
-- 5.iTerm2→Preferences→Profiles→Default(or other profile)→Advanced→Triggers→Edit, add two triggers as the screenshot
+- 5.Add triggers: iTerm2→Preferences→Profiles→Default(or other profile)→Advanced→Triggers→Edit, add two triggers as the screenshot
   ![iTerm2-add-triggers1](./img/iTerm2-add-triggers1.jpg)
   ![iTerm2-add-triggers2](./img/iTerm2-add-triggers2.jpg)
   | Regular Expression | Action | Parameters | Instant | Enabled |
