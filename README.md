@@ -7,7 +7,7 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
 
 ## Config steps
 
-- 1. install `lrzsz` on your server
+- 1.install `lrzsz` on your server
 
   ```
   # Debian
@@ -20,11 +20,11 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
   dnf install lrzsz
   ```
 
-- 2. install `lrzsz` on your macOS
+- 2.install `lrzsz` on your macOS
   ```
   brew install lrzsz
   ```
-- 3. download these two scripts to `/usr/local/bin/`
+- 3.download these two scripts to `/usr/local/bin/`
 
   ```bash
   wget https://raw.githubusercontent.com/xiebruce/iterm2-zmodem/main/iterm2-rz.sh -O /usr/local/bin/iterm2-rz.sh
@@ -32,20 +32,24 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
   wget https://raw.githubusercontent.com/xiebruce/iterm2-zmodem/main/iterm2-sz.sh -O /usr/local/bin/iterm2-sz.sh
   ```
 
-- 4. give executable permission to these two files
+- 4.give executable permission to these two files
   ```bash
   chmod u+x /usr/local/bin/iterm2-*
   ```
-- 5. iTerm2→Preferences→Profiles→Default(or other profile)→Advanced→Triggers→Edit, add two triggers as the screenshot
-     ![iTerm2-Triggers](./iTerm2-triggers.jpg)
-     | Regular Expression | Action | Parameters | Instant | Enabled |
-     | --------------------------------- | ----------------------- | --------------------------- | :------ | :------ |
-     | \\*\\*B00 | Run Silent Coprocess... | /usr/local/bin/iterm2-rz.sh | check | check |
-     | rz waiting to receive.\\*\\*B0100 | Run Silent Coprocess... | /usr/local/bin/iterm2-sz.sh | check | check |
+- 5.iTerm2→Preferences→Profiles→Default(or other profile)→Advanced→Triggers→Edit, add two triggers as the screenshot
+  ![iTerm2-Triggers](./iTerm2-triggers.jpg)
+  | Regular Expression | Action | Parameters | Instant | Enabled |
+  | --------------------------------- | ----------------------- | --------------------------- | :------ | :------ |
+  | \\*\\*B00 | Run Silent Coprocess... | /usr/local/bin/iterm2-rz.sh | check | check |
+  | rz waiting to receive.\\*\\*B0100 | Run Silent Coprocess... | /usr/local/bin/iterm2-sz.sh | check | check |
 
 ## Usage
 
-Fist login to your server.
+Fist login to your server
+
+```bash
+ssh user@12.34.56.78
+```
 
 **Upload files**: on server, type `rz`, press Enter, wait for a while, choose files you want to upload.
 
@@ -67,4 +71,4 @@ export CHOOSE_FOLDER=true
 
 Note that no matter you are using zsh or fish or other shell, you should add it to `~/.bashrc`, otherwise it will not work.
 
-For for detail, see [here](https://www.xiebruce.top/1863.html).
+For more details, see [here](https://www.xiebruce.top/1863.html).
