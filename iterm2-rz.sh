@@ -6,7 +6,7 @@ osascript -e 'tell application "iTerm" to version' >/dev/null 2>&1 && app_name="
 # confirm that choose folder or not
 # you can set CHOOSE_FOLDER=true in your ~/.bashrc(not .zshrc or config.fish) to enable this feature
 source "$HOME/.bashrc"
-echo $CHOOSE_FOLDER >"$HOME/Downloads/choose_folder.txt"
+
 if [ -n "$CHOOSE_FOLDER" ] && [ "$CHOOSE_FOLDER" = true ]; then
     # choose folder by using apple script
     FILE=$(
