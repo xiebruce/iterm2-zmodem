@@ -71,7 +71,7 @@ ssh user@12.34.56.78
 **Upload files**:
 
 - Method 1: on server, type `rz`, press Enter, wait for a while, choose files you want to upload.
-- Method 2: on server, drag a file/folder and drop it to the iTerm2 window(note that you can only drag&drop one file/folder).
+- Method 2: on server, drag a file/folder and drop it to the iTerm2 window(note that you can only drag&drop one file/folder, and you need to update iTerm2 to [iTerm2-3_5_20230503-nightly.zip](https://iterm2.com/downloads/nightly/iTerm2-3_5_20230503-nightly.zip) or higher).
 
 **Download files**: on server, type `sz /path/to/file`, press Enter, wait for a while, the file will be downloaded to your macOS "Downloads" folder.
 
