@@ -68,7 +68,10 @@ Fist login to your server
 ssh user@12.34.56.78
 ```
 
-**Upload files**: on server, type `rz`, press Enter, wait for a while, choose files you want to upload.
+**Upload files**:
+
+- Method 1: on server, type `rz`, press Enter, wait for a while, choose files you want to upload.
+- Method 2: on server, drag a file/folder and drop it to the iTerm2 window(note that you can only drag&drop one file/folder).
 
 **Download files**: on server, type `sz /path/to/file`, press Enter, wait for a while, the file will be downloaded to your macOS "Downloads" folder.
 
