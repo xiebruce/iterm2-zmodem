@@ -1,6 +1,6 @@
 # iTerm2-zmodem scripts
 
-[中文文档](https://www.xiebruce.top/1863.html)  
+[中文文档](https://www.xiebruce.top/1863.html)
 [详细文档](https://www.xiebruce.top/1863.html)
 
 These two shells are work with iTerm2 and rz/sz to allow it upload files to server.
@@ -21,9 +21,11 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
   ```
 
 - 2.Install `lrzsz` on your macOS
+
   ```
   brew install lrzsz
   ```
+
 - 3.Download these two scripts to `/usr/local/bin/`
 
   ```bash
@@ -33,20 +35,24 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
   ```
 
 - 4.Give executable permission to these two files
+
   ```bash
   chmod u+x /usr/local/bin/iterm2-*
   ```
+
 - 5.Add triggers: iTerm2→Preferences→Profiles→Default(or other profile)→Advanced→Triggers→Edit, add two triggers as the screenshot
   ![iTerm2-add-triggers1](./img/iTerm2-add-triggers1.jpg)
   ![iTerm2-add-triggers2](./img/iTerm2-add-triggers2.jpg)
-  | Regular Expression | Action | Parameters | Instant | Enabled |
+
+  | Regular Expression                | Action                  | Parameters                  | Instant | Enabled |
   | --------------------------------- | ----------------------- | --------------------------- | :------ | :------ |
-  | \\*\\*B00 | Run Silent Coprocess... | /usr/local/bin/iterm2-rz.sh | check | check |
-  | rz waiting to receive.\\*\\*B0100 | Run Silent Coprocess... | /usr/local/bin/iterm2-sz.sh | check | check |
+  | \\*\\*B00                         | Run Silent Coprocess... | /usr/local/bin/iterm2-rz.sh | check   | check   |
+  | rz waiting to receive.\\*\\*B0100 | Run Silent Coprocess... | /usr/local/bin/iterm2-sz.sh | check   | check   |
 
   Note that if you add other profile to login to your server, you should add triggers on that profile, every profile keep their own triggers.
   ![iTerm2-add-triggers1](./img/iTerm2-add-triggers3.jpg)
-  -6.Enable drag&drop upload: iTerm2→Preferences→Advanced→search "dropp"
+
+- 6.Enable drag&drop upload: iTerm2→Preferences→Advanced→search "dropp"
   ![iTerm2-add-triggers1](./img/iTerm2-drag&drop-trigger.jpg)
   input the following command
 
