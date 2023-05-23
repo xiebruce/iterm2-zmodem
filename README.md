@@ -46,6 +46,13 @@ These two shells are work with iTerm2 and rz/sz to allow it upload files to serv
 
   Note that if you add other profile to login to your server, you should add triggers on that profile, every profile keep their own triggers.
   ![iTerm2-add-triggers1](./img/iTerm2-add-triggers3.jpg)
+  -6.Enable drag&drop upload: iTerm2→Preferences→Advanced→search "dropp"
+  ![iTerm2-add-triggers1](./img/iTerm2-drag&drop-trigger.jpg)
+  input the following command
+
+  ```bash
+  /usr/local/bin/iterm2-sz.sh dragfiles \(filenames)
+  ```
 
 ## Usage
 
